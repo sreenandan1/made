@@ -1,69 +1,168 @@
 .carousel-inner img {
-    height: 80vh; 
-    object-fit: cover;
-    background: transparent black ;
-    
+  height: 80vh;
+  object-fit: cover;
 }
 
-  .carousel-caption{
-    bottom: 30%;
-    
+.carousel-caption {
+  bottom: 30%;
+}
+.HomeText span {
+  font-size: 30px;
+}
+.HomeText strong {
+  font-size: 30px;
+}
+.carousel-caption h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.Hp {
+  font-size: 20px;
+}
+
+.carousel-caption a {
+  /* background-color: aqua; */
+  width: 15vw;
+}
+
+.ntnbuy {
+  margin-right: 0px !important;
+  background-color: rgb(25, 169, 133);
+}
+
+/* Carousel Image Styling */
+.carousel-inner img {
+  height: 80vh; 
+  object-fit: cover;
+}
+
+/* Adding Overlay Effect on Carousel Image */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  z-index: 1;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+  z-index: 2; /* Ensure caption stays above overlay */
+  text-align: center;
+}
+
+/* Text Styling */
+.HomeText span, .HomeText strong {
+  font-size: 30px;
+}
+
+.carousel-caption h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Hp {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Button Styling */
+.carousel-caption a {
+  width: 11vw;
+  margin: 10px;
+}
+
+.carousel-caption .btn-primary {
+  background-color: rgb(25, 169, 133); /* Custom button background color */
+  color: white;
+}
+
+.carousel-caption .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+/* Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+      font-size: 2rem; /* Smaller heading on smaller screens */
   }
-  .HomeText span{
-    font-size: 30px;
+
+  .carousel-caption .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
   }
-  .HomeText strong{
-    font-size: 30px;
+
+  .carousel-caption a {
+      width: 30vw;
   }
-  .carousel-caption h1{
-    font-size: 50px;
-    font-weight: bold;
+}
+
+/* Further Small Screen Adjustments */
+@media (max-width: 375px) {
+  .carousel-caption h1 {
+      font-size: 1.5rem; /* Even smaller text for very small screens */
   }
-  .Hp{
+
+  .carousel-caption .btn {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+  }.Hp {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .carousel-caption a {
+      width: 40vw; /* Adjust button width for very small screens */
+  }
+}
+
+/* 
+.indicators{
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+} */
+
+
+
+@media (max-width:375px){
+  .HomeText span, .HomeText strong {
     font-size: 20px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*   
-  .carousel-caption {
-    bottom: 20%;
-  }
-  
   .carousel-caption h1 {
-    font-size: 3rem;
+    font-size: 22px;
     font-weight: bold;
+    color: #fff;
+  }
+  .Hp {
+    font-size: 12px;
+    color: #fff;
+  }
+  .carousel-caption a {
+    width: 35vw;
+    /* margin: 10px; */
+  }
+  .carousel-caption {
+    bottom: 35%;
   }
   
-  .carousel-caption p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .carousel-caption .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-caption h1 {
-      font-size: 2rem;
-    }
-  
-    .carousel-caption p {
-      font-size: 1rem;
-    }
-  } */
+}

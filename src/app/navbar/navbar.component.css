@@ -1,42 +1,35 @@
-.n{
+/* Navbar items style */
+.n {
     width: 6vw;
     font-size: 0.80rem;
     font-weight: bold;
     color: gray;
 }
-.roww1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.container-fluid{
+.container-fluid {
     height: 10vh;
 }
 
-
+/* When screen is smaller than 768px */
 @media (max-width: 768px) {
-
-    .n{
+    .n {
         width: 7vw;
         font-size: 0.70rem;
     }
-    .logo{
+
+    .logo {
         margin-left: 91px !important;
     }
 }
 
+/* When screen is 375px or smaller */
 @media (max-width: 375px) {
+    /* Hide navbar items except for search icon */
     .nav-items .n:not(.search) {
-        display: none; 
+        display: none;
     }
 
+    /* Show the search icon */
     .search {
         display: inline-flex;
         position: relative;
@@ -44,13 +37,41 @@
         font-size: 18px;
     }
 
+    /* Center the navbar on small screens */
     .navbar {
-        justify-content: center; 
+        justify-content: center;
     }
 
-    .container-fluid{
+    .container-fluid {
         height: 7vh;
     }
 
-    
+    /* Show the hamburger button only on small screens (375px or less) */
+    .navbar-toggler {
+        display: block;
+        /* background-color: thistle; */
+        position: relative;
+        right: 150px;
+        bottom: 30px;
+    }
+
+    /* Hide navbar links when the screen is small, inside the toggle container */
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+}
+
+/* The hamburger menu should be hidden on larger screens */
+@media (min-width: 376px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex;
+    }
 }

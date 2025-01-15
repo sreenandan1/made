@@ -1,10 +1,9 @@
-<nav class="container-fluid navbar ">
-   
+<nav class="container-fluid navbar navbar-light">
     <div class="row align-items-center justify-content-center text-center w-100 h-100">
         <div class="col-6">
             <img class="logo" style="margin-left: 150px;" src="assets/images/logo.png" alt="Logo">
         </div>
-        <div  class="col-6 d-flex justify-content-center align-items-center">
+        <div class="col-6 d-flex justify-content-center align-items-center">
             <div class="d-flex nav-items">
                 <div class="n">Home</div>
                 <div class="n">About</div>
@@ -18,6 +17,25 @@
             </div>
         </div>
     </div>
+
+    <!-- Hamburger toggle button (only visible for 375px screen size and below) -->
+    <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span ><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <!-- Collapsable navbar menu (links will show or hide when toggled) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 
 

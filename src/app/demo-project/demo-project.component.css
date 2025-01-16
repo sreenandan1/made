@@ -1,0 +1,174 @@
+
+
+.sub {
+  height: 80vh;
+}
+.sub img {
+  width: 40vw;
+  margin-left: 0%;
+  margin-bottom: 1%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1),
+    4px 0 6px rgba(0, 0, 0, 0.1), -4px 0 6px rgba(0, 0, 0, 0.1); /* Shadows on all sides */
+}
+.para {
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-size: 0.9rem;
+}
+
+.sub1 {
+  height: 40vh;
+  /* width: ; */
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 19%;
+  margin-bottom: 10%;
+}
+.sub1 h2 {
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 6px;
+}
+.aroDiv {
+  width: 11px;
+  height: 11px;
+  background-color: rgb(199, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.arowMainDiv {
+  /* background-color: skyblue; */
+  display: flex;
+  align-items: center;
+  text-indent: 10px;
+}
+.arowMainDiv p {
+  color: gray;
+}
+
+.Ar {
+  color: white;
+  font-size: 40%;
+  margin-right: 12px;
+  margin-top: 1px;
+}
+
+.ntnbuy {
+  margin-left: 10px;
+  width: 10vw;
+  height: 4vh;
+  font-size: 12px;
+}
+.btntour {
+  width: 10vw;
+  border: 1px solid black;
+  color: black;
+  height: 4vh;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:375px){
+    .sub {
+        height: 44vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 50px;
+      }
+      .sub img {
+        width: 94vw;
+        margin-right: 15%;
+        margin-bottom: 1%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1),
+          4px 0 6px rgba(0, 0, 0, 0.1), -4px 0 6px rgba(0, 0, 0, 0.1); 
+      }
+      .para {
+        /* font-family: Helvetica, Arial, sans-serif; */
+        font-family: "Gill Sans", sans-serif;
+      
+        font-size: 0.8rem;
+        /* background-color: aqua; */
+        
+      }
+      
+      .paraMain{
+        position: relative;
+        width: 90vw;
+      }
+      .sub1 {
+        height: 40vh;
+        /* width: ; */
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 19%;
+        margin-bottom: 10%;
+      }
+      .sub1 h2 {
+        font-weight: bold;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+      }
+      .aroDiv {
+        width: 11px;
+        height: 11px;
+        background-color: rgb(199, 199, 199);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+      }
+      .arowMainDiv {
+        /* background-color: skyblue; */
+        display: flex;
+        align-items: center;
+        text-indent: 10px;
+      }
+      .arowMainDiv p {
+        color: gray;
+        font-size: 0.70rem;
+      }
+      
+      .Ar {
+        color: white;
+        font-size: 40%;
+        margin-right: 12px;
+        margin-top: 1px;
+      }
+      
+      .ntnbuy {
+        margin-left: 10px;
+        width: 25vw;
+        height: 4vh;
+        font-size: 12px;
+      }
+      .btntour {
+        width: 10vw;
+        border: 1px solid black;
+        color: black;
+        height: 4vh;
+        width: 25vw;
+
+        
+        font-size: 12px;
+      }
+      
+      
+      
+      
+
+}

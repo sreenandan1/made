@@ -18,7 +18,6 @@
   color: rgb(25, 169, 133);
   /* margin-top: 2.5%; */
   margin-bottom: 40%;
-
 }
 
 .sub p {
@@ -40,65 +39,61 @@
   height: 24vh;
   background-color: white;
 }
-.box {
-  /* heig; */
+
+@media (max-width: 768px) {
+  .container {
+    /* background-color: red; */
+    height: 30vh;
+  }
+  .box {
+    height: 25vh;
+    width: 32vw;
+    /* background-color: rgb(165, 247, 242); */
+    position: relative;
+    right: 3%;
+  }
+
+  .sub {
+    height: 14vw;
+
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .thumb {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(25, 169, 133);
+  }
+  .thumb2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: rgb(25, 169, 133);
+    margin-top: 2.5%;
+  }
+
+  .sub p {
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    color: gray;
+    text-align: justify;
+    width: 23vw;
+    line-height: 18px;
+  }
+
+  .sub span {
+    /* background-color: greenyellow; */
+    font-weight: 600;
+    /* height: 52vh !important; */
+    font-size: 0.97rem;
+    font-family: sans-serif;
+    /* margin-top: 55%; */
+    /* line-height: 1.8; */
+  }
 }
-
-
-@media (max-width:768px){
-    .container{
-        /* background-color: red; */
-        height: 30vh;
-    }
-    .box {
-        height: 25vh;
-        width: 32vw;
-        /* background-color: rgb(165, 247, 242); */
-      }
-
-      .sub {
-        height: 14vw;
-        
-        /* background-color: burlywood; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .thumb {
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        color: rgb(25, 169, 133);
-      }
-      .thumb2 {
-        display: flex;
-        justify-content: center;
-        font-size: 1.6rem;
-        color: rgb(25, 169, 133);
-        margin-top: 2.5%;
-      }
-    
-      .sub p {
-        font-size: 0.7rem;
-        font-family: sans-serif;
-        color: gray;
-        text-align: justify;
-        line-height: 15px;
-      }
-    
-      .sub span {
-        /* background-color: greenyellow; */
-        font-weight: 600;
-        /* height: 52vh !important; */
-        font-size: 0.97rem;
-        font-family: sans-serif;
-        /* margin-top: 55%; */
-        /* line-height: 1.8; */
-      }
-      
-    
-}
-
 
 @media (max-width: 375px) {
   .box {
@@ -137,6 +132,8 @@
     color: gray;
     text-align: justify;
     line-height: 15px;
+    width: 108%;
+
   }
 
   .sub span {

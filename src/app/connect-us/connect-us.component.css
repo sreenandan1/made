@@ -52,17 +52,15 @@
 
 
 .icon {
-    font-size: 1rem;
+    font-size: 0.65rem;
     color: rgb(30, 158, 58);
     margin-right: 2px;
 }
 
-.CE {
-    align-items: center;
-}
+
 
 .cu-callText {
-    font-size: 1rem;
+    font-size: 0.70rem;
     text-indent: 5px;
     font-family: sans-serif;
     /* font-weight: lighter; */
@@ -71,6 +69,7 @@
 .gg {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* justify-content: center; */
     /* background-color: aqua; */
     /* width: 50; */

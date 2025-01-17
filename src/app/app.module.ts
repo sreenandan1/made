@@ -8,6 +8,8 @@ import { ConnectUsComponent } from './connect-us/connect-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WeProvideComponent } from './we-provide/we-provide.component';
 import { DemoProjectComponent } from './demo-project/demo-project.component';
+import { ClientSaysComponent } from './client-says/client-says.component';
+import { CostOpinionComponent } from './cost-opinion/cost-opinion.component';
 
 
 
@@ -18,7 +20,9 @@ import { DemoProjectComponent } from './demo-project/demo-project.component';
     ConnectUsComponent,
     NavbarComponent,
     WeProvideComponent,
-    DemoProjectComponent
+    DemoProjectComponent,
+    ClientSaysComponent,
+    CostOpinionComponent
   ],
   imports: [
     BrowserModule,
